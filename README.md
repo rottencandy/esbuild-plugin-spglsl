@@ -13,6 +13,7 @@ npm install --save-dev esbuild-plugin-spglsl
 ```
 
 2. Add the plugin to your esbuild build script:
+
 ```js
 const esbuild = require('esbuild')
 const SpglslPlugin = require('esbuild-plugin-spglsl')
@@ -32,4 +33,13 @@ const SpglslPlugin = require('esbuild-plugin-spglsl')
     }),
    ],
  })
+```
+
+3. Import and use shaders:
+
+```js
+import myShader from './myShader.frag';
+
+...
+gl.shaderSource(sh, myShader);
 ```

@@ -1,11 +1,11 @@
 {
   "name": "esbuild-plugin-spglsl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A plugin for esbuild that enables importing glsl files compiled with spglsl.",
   "main": "main.js",
   "types": "main.d.ts",
   "license": "MIT",
-  "dependencies": {
-    "spglsl": "^0.2.6"
+  "peerDependencies": {
+    "spglsl": ">=0.2.6"
   }
 }
